@@ -1,18 +1,18 @@
 databases:
-  - name: mood
+  - name: adventure
     databaseName: adventure
-    user: user001
+    user: adventure
 
 services:
   - type: web
-    name: mysite
+    name: adventure
     env: python
     buildCommand: "./build.sh"
     startCommand: "gunicorn adventure.wsgi:application"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: adventure
           property: connectionString
       - key: SECRET_KEY
         generateValue: true

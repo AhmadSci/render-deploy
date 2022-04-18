@@ -8,8 +8,8 @@ poetry run pip install psycopg2
 poetry run pip install selenium
 poetry run pip install parsel
 poetry run pip install -r requirements.txt
-poetry run python manage.py makemigrations
-poetry run python manage.py migrate
-
 
 python manage.py collectstatic --no-input
+
+python manage.py makemigrations
+python manage.py migrate

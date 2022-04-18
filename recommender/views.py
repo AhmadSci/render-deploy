@@ -69,10 +69,10 @@ def chormiuimsearch(url):
 
     options.add_argument('headless')
     options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-    # options.add_argument("--headless")
-    # options.add_argument("--disable-dev-shm-usage")
-    # options.add_argument("--no-sandbox")
-    browser = webdriver.Chrome(executable_path=chromedrive_path, chrome_options=options)
+    options.add_argument("--headless")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
+    browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
     browser.get(url)
 
     # getting the html of the page

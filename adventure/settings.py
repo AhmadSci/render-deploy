@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'adventure.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'dpg-c9ebir46fj34nlgggoug-a',
+        'NAME': 'adventure_hr6j',
         'USER': 'adventure_hr6j_user',
         'PASSWORD': '06ZO1F2uG3dwZ14lKSR13DQrtpHfYRLT',
         'HOST': 'localhost',

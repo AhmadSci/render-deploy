@@ -77,23 +77,23 @@ WSGI_APPLICATION = 'adventure.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-#         'NAME': 'gis',
-#         'USER': 'user001',
-#         'PASSWORD': '123456789',
-#         'HOST': 'localhost',
-#         'PORT': '5432'
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.config(        # Feel free to alter this value to suit your needs.        
-        default='postgresql://postgres:postgres@localhost:5432/adventure',        
-        conn_max_age=600    
-    )
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'dpg-c9ebir46fj34nlgggoug-a',
+        'USER': 'adventure_hr6j_user',
+        'PASSWORD': '06ZO1F2uG3dwZ14lKSR13DQrtpHfYRLT',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.config(        # Feel free to alter this value to suit your needs.        
+#         default='postgresql://postgres:postgres@localhost:5432/adventure',        
+#         conn_max_age=600    
+#     )
+# }
 
 
 
